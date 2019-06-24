@@ -6,7 +6,7 @@ PORT=8080
 OS=$(uname)
 
 # Check cross platform
-if [ $OS = "Linux" ]
+if [ $OS = "Linux" ] || [ $OS = "Darwin" ]
 then
   SITE=$(pwd)
 else
